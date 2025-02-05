@@ -26,7 +26,7 @@ const MainComponent = () => {
       let testUrl = `https://dummyjson.com/products?limit=${itemsPerPage}&skip=${(currentPage - 1) * itemsPerPage
          } `;
       if (keyword) {
-         testUrl = `https:/dummyjson.com/products/search?q=${keyword}`;
+         testUrl = `https://dummyjson.com/products/search?q=${keyword}`;
       }
       axios
          .get(testUrl)
