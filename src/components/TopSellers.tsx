@@ -14,7 +14,7 @@ const TopSellers = () => {
       const fetchData = async () => {
          try {
             const response = await fetch("https://randomuser.me/api/?results=5");
-            const data = await response.json();a
+            const data = await response.json();
             console.log("data", data)
             const authorsData = data.results.map((user: { name: { first: string; last: string; }; picture: { medium: string; }; }) => ({
                name: `${user.name.first} ${user.name.last}`,
